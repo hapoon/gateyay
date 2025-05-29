@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"gateyay/handler"
 	"log"
 	"net/http"
 )
@@ -13,18 +13,8 @@ const (
 
 func main() {
 	mux := http.NewServeMux()
-	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		_, err := fmt.Fprintf(w, "Hello, World!")
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-		}
-	})
-	mux.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
-		_, err := fmt.Fprintf(w, "OK")
-		if err != nil {
-			http.Error(w, err.Error(), http.StatusInternalServerError)
-		}
-	})
+	mux.HandleFunc("/", handler.RootHandler)
+	mux.HandleFunc("/health", handler.HealthHandler)
 	if err := http.ListenAndServe(":8080", mux); err != nil {
 		log.Fatalf("Failed to start server: %v", err)
 	}
