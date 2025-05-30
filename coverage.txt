@@ -1,6 +1,15 @@
 mode: atomic
 gateyay/main.go:14.13,18.58 4 0
 gateyay/main.go:18.58,20.3 1 0
+gateyay/domain_model/helper.go:8.50,11.16 3 2
+gateyay/domain_model/helper.go:11.16,13.3 1 0
+gateyay/domain_model/helper.go:14.2,14.10 1 2
+gateyay/domain_model/reservation.go:22.37,24.2 1 1
+gateyay/domain_model/reservation.go:26.37,28.2 1 1
+gateyay/domain_model/reservation.go:30.36,32.2 1 1
+gateyay/domain_model/reservation.go:34.37,36.2 1 1
+gateyay/domain_model/reservation.go:38.51,44.2 1 1
+gateyay/domain_model/reservation.go:51.15,58.2 1 1
 gateyay/handler/health.go:8.60,10.16 2 1
 gateyay/handler/health.go:10.16,12.3 1 0
 gateyay/handler/root.go:8.58,9.18 1 2

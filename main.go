@@ -7,8 +7,8 @@ import (
 )
 
 const (
-	name    = "gateyay" //nolint:all
-	version = "0.0.1"   //nolint:all
+	name    = "gateyay" //nolint:unused
+	version = "0.0.1"   //nolint:unused
 )
 
 func main() {

@@ -8,6 +8,8 @@ import (
 )
 
 func TestRootHandler(t *testing.T) {
+	t.Parallel()
+
 	req, err := http.NewRequest("GET", "/", nil)
 	if err != nil {
 		t.Fatal(err)

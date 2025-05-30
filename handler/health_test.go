@@ -8,6 +8,8 @@ import (
 )
 
 func TestHealthHandler(t *testing.T) {
+	t.Parallel()
+
 	req, err := http.NewRequest("GET", "/health", nil)
 	if err != nil {
 		t.Fatal(err)
